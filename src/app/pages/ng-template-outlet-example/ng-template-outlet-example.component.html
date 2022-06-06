@@ -1,0 +1,16 @@
+<p>ng-template-outlet-example works!</p>
+
+<ng-container *ngTemplateOutlet="greet"></ng-container>
+<hr>
+<ng-container *ngTemplateOutlet="eng; context: myContext"></ng-container>
+<hr>
+<ng-container *ngTemplateOutlet="svk; context: myContext"></ng-container>
+<hr>
+<ng-container *ngTemplateOutlet="demo; context: myContext"></ng-container>
+<hr>
+
+<ng-template #greet><span>Hello</span></ng-template>
+<ng-template #eng let-name><span>Hello {{ name }}!</span></ng-template>
+<ng-template #svk let-person="localSk"><span>Ahoj {{ person }}!</span></ng-template>
+<ng-template #demo let-demo="name"><span>你好，{{demo}}！</span></ng-template>
+

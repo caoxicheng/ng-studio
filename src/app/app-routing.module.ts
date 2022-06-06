@@ -9,7 +9,11 @@ const routes: Routes = [
   },
   {
     path: 'hello',
-    loadChildren: () => import('./hello-page/hello-page.module').then(m => m.HelloPageModule)
+    loadChildren: () => import('./pages/hello-page/hello-page.module').then(m => m.HelloPageModule)
+  },
+  {
+    path: 'ng-template-outlet',
+    loadChildren: () => import('./pages/ng-template-outlet-example/ng-template-outlet-example.module').then(m => m.NgTemplateOutletExampleModule)
   }
 ];
 

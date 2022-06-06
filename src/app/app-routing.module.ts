@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'ng-template-outlet',
     loadChildren: () => import('./pages/ng-template-outlet-example/ng-template-outlet-example.module').then(m => m.NgTemplateOutletExampleModule)
+  },
+  {
+    path: 'dynamic-component-loading',
+    loadChildren: () => import('./pages/dynamic-component-loading/dynamic-component-loading.module').then(m => m.DynamicComponentLoadingModule)
   }
 ];
 

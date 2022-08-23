@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'dynamic-component-loading',
     loadChildren: () => import('./pages/dynamic-component-loading/dynamic-component-loading.module').then(m => m.DynamicComponentLoadingModule)
+  },
+  {
+    path: 'no-ng-deep',
+    loadChildren: () => import('./pages/no-ng-deep/no-ng-deep.module').then(m => m.NoNgDeepModule)
   }
 ];
 
